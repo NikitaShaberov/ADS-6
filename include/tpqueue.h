@@ -26,4 +26,4 @@ struct SYM {
     int prior;
 };
 
-#endif
+#endif  // INCLUDE_TPQUEUE_H_
