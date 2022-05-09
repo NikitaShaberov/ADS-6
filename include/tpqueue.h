@@ -11,7 +11,7 @@ class TPQueue {
     TPQueue() : n(0), m(0) { }
     void push(T num) {
         int i = m++;
-        for (i; (--i >= n && (mas[i % size].prior <num.prior)); {
+        for ((--i >= n) && (ar[i % size].prior < num.prior)) {
             mas[(i + 1) % size] = mas[i % size];
         }
         mas[(i + 1) % size] = num;
